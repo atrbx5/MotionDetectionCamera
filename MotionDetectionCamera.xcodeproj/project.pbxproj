@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB43B2BC1FDA901F003E49E8 /* MLHand.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CB43B2BB1FDA901F003E49E8 /* MLHand.mlmodel */; };
+		CB43B2BE1FDA9064003E49E8 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43B2BD1FDA9064003E49E8 /* Log.swift */; };
+		CB43B2C01FDA909C003E49E8 /* NSImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43B2BF1FDA909C003E49E8 /* NSImageExtension.swift */; };
+		CBDC362E1FDA853B0029CF19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC362D1FDA853B0029CF19 /* AppDelegate.swift */; };
+		CBDC36301FDA853B0029CF19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBDC362F1FDA853B0029CF19 /* ViewController.swift */; };
+		CBDC36321FDA853B0029CF19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBDC36311FDA853B0029CF19 /* Assets.xcassets */; };
+		CBDC36351FDA853B0029CF19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBDC36331FDA853B0029CF19 /* Main.storyboard */; };
+		CBDC8E501FF2AB67001E29C0 /* pose_iter_440000a.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CBDC8E4F1FF2AB67001E29C0 /* pose_iter_440000a.mlmodel */; };
+		E020A1C7C4BFEF9AB321495C /* Pods_MotionDetectionCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8D23AA5846CE31083CBB1F /* Pods_MotionDetectionCamera.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38D7925C97BA10CE7DEE05D5 /* Pods-MotionDetectionCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionDetectionCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MotionDetectionCamera/Pods-MotionDetectionCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		3D2491F798A73B6AA2B82736 /* Pods-MotionDetectionCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionDetectionCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotionDetectionCamera/Pods-MotionDetectionCamera.release.xcconfig"; sourceTree = "<group>"; };
+		CB43B2BB1FDA901F003E49E8 /* MLHand.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MLHand.mlmodel; sourceTree = "<group>"; };
+		CB43B2BD1FDA9064003E49E8 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		CB43B2BF1FDA909C003E49E8 /* NSImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImageExtension.swift; sourceTree = "<group>"; };
+		CBDC362A1FDA853B0029CF19 /* MotionDetectionCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionDetectionCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBDC362D1FDA853B0029CF19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CBDC362F1FDA853B0029CF19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CBDC36311FDA853B0029CF19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBDC36341FDA853B0029CF19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBDC36361FDA853B0029CF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBDC36371FDA853B0029CF19 /* MotionDetectionCamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MotionDetectionCamera.entitlements; sourceTree = "<group>"; };
+		CBDC8E4F1FF2AB67001E29C0 /* pose_iter_440000a.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = pose_iter_440000a.mlmodel; sourceTree = "<group>"; };
+		DA8D23AA5846CE31083CBB1F /* Pods_MotionDetectionCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotionDetectionCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBDC36271FDA853B0029CF19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E020A1C7C4BFEF9AB321495C /* Pods_MotionDetectionCamera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB43B2BA1FDA901F003E49E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CBDC8E4F1FF2AB67001E29C0 /* pose_iter_440000a.mlmodel */,
+				CB43B2BB1FDA901F003E49E8 /* MLHand.mlmodel */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBDC36211FDA853B0029CF19 = {
+			isa = PBXGroup;
+			children = (
+				CBDC362C1FDA853B0029CF19 /* MotionDetectionCamera */,
+				CBDC362B1FDA853B0029CF19 /* Products */,
+				FF172A5719E81AE515B3B950 /* Pods */,
+				E57C5B112EDBE696AAC83CB2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CBDC362B1FDA853B0029CF19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBDC362A1FDA853B0029CF19 /* MotionDetectionCamera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBDC362C1FDA853B0029CF19 /* MotionDetectionCamera */ = {
+			isa = PBXGroup;
+			children = (
+				CB43B2BD1FDA9064003E49E8 /* Log.swift */,
+				CB43B2BF1FDA909C003E49E8 /* NSImageExtension.swift */,
+				CBDC362D1FDA853B0029CF19 /* AppDelegate.swift */,
+				CBDC362F1FDA853B0029CF19 /* ViewController.swift */,
+				CBDC36311FDA853B0029CF19 /* Assets.xcassets */,
+				CBDC36331FDA853B0029CF19 /* Main.storyboard */,
+				CBDC36361FDA853B0029CF19 /* Info.plist */,
+				CBDC36371FDA853B0029CF19 /* MotionDetectionCamera.entitlements */,
+				CB43B2BA1FDA901F003E49E8 /* Resources */,
+			);
+			path = MotionDetectionCamera;
+			sourceTree = "<group>";
+		};
+		E57C5B112EDBE696AAC83CB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D23AA5846CE31083CBB1F /* Pods_MotionDetectionCamera.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF172A5719E81AE515B3B950 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38D7925C97BA10CE7DEE05D5 /* Pods-MotionDetectionCamera.debug.xcconfig */,
+				3D2491F798A73B6AA2B82736 /* Pods-MotionDetectionCamera.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBDC36291FDA853B0029CF19 /* MotionDetectionCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBDC363A1FDA853B0029CF19 /* Build configuration list for PBXNativeTarget "MotionDetectionCamera" */;
+			buildPhases = (
+				E5A3C1F84B9C847114858FAF /* [CP] Check Pods Manifest.lock */,
+				CBDC36261FDA853B0029CF19 /* Sources */,
+				CBDC36271FDA853B0029CF19 /* Frameworks */,
+				CBDC36281FDA853B0029CF19 /* Resources */,
+				9500E3EB0FD199241205719F /* [CP] Embed Pods Frameworks */,
+				BB957C0F91A6C07D91647DB3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MotionDetectionCamera;
+			productName = MotionDetectionCamera;
+			productReference = CBDC362A1FDA853B0029CF19 /* MotionDetectionCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBDC36221FDA853B0029CF19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = pervushyn.a;
+				TargetAttributes = {
+					CBDC36291FDA853B0029CF19 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CBDC36251FDA853B0029CF19 /* Build configuration list for PBXProject "MotionDetectionCamera" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBDC36211FDA853B0029CF19;
+			productRefGroup = CBDC362B1FDA853B0029CF19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBDC36291FDA853B0029CF19 /* MotionDetectionCamera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBDC36281FDA853B0029CF19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDC36321FDA853B0029CF19 /* Assets.xcassets in Resources */,
+				CBDC36351FDA853B0029CF19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9500E3EB0FD199241205719F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MotionDetectionCamera/Pods-MotionDetectionCamera-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OpenCV/opencv2.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/opencv2.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotionDetectionCamera/Pods-MotionDetectionCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB957C0F91A6C07D91647DB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotionDetectionCamera/Pods-MotionDetectionCamera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5A3C1F84B9C847114858FAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MotionDetectionCamera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBDC36261FDA853B0029CF19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBDC36301FDA853B0029CF19 /* ViewController.swift in Sources */,
+				CBDC8E501FF2AB67001E29C0 /* pose_iter_440000a.mlmodel in Sources */,
+				CB43B2BC1FDA901F003E49E8 /* MLHand.mlmodel in Sources */,
+				CB43B2BE1FDA9064003E49E8 /* Log.swift in Sources */,
+				CB43B2C01FDA909C003E49E8 /* NSImageExtension.swift in Sources */,
+				CBDC362E1FDA853B0029CF19 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CBDC36331FDA853B0029CF19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBDC36341FDA853B0029CF19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBDC36381FDA853B0029CF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CBDC36391FDA853B0029CF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		CBDC363B1FDA853B0029CF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38D7925C97BA10CE7DEE05D5 /* Pods-MotionDetectionCamera.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MotionDetectionCamera/MotionDetectionCamera.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MotionDetectionCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.atrbx5.MotionDetectionCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		CBDC363C1FDA853B0029CF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D2491F798A73B6AA2B82736 /* Pods-MotionDetectionCamera.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MotionDetectionCamera/MotionDetectionCamera.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MotionDetectionCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.atrbx5.MotionDetectionCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBDC36251FDA853B0029CF19 /* Build configuration list for PBXProject "MotionDetectionCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBDC36381FDA853B0029CF19 /* Debug */,
+				CBDC36391FDA853B0029CF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBDC363A1FDA853B0029CF19 /* Build configuration list for PBXNativeTarget "MotionDetectionCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBDC363B1FDA853B0029CF19 /* Debug */,
+				CBDC363C1FDA853B0029CF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBDC36221FDA853B0029CF19 /* Project object */;
+}
