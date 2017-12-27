@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fHr-0N-tjQ">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CourierNew.ttf">
+            <string>CourierNewPSMT</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="rzl-Ie-C0U">
+            <objects>
+                <navigationController id="fHr-0N-tjQ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qV1-zR-iAX">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fZI-F4-Jah"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Gg-pU-0U9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-711" y="-212"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NNPoseIOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e8F-AM-Mhz">
+                                <rect key="frame" x="0.0" y="64" width="201" height="125.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="e8F-AM-Mhz" secondAttribute="height" multiplier="8:5" id="Hw9-s1-x4W"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uNo-l9-LYZ">
+                                <rect key="frame" x="0.0" y="64" width="201" height="125.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Any-n1-QSw">
+                                <rect key="frame" x="209" y="64" width="111" height="215.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="hKv-Bo-j01"/>
+                                </constraints>
+                                <string key="text">{0,  "Nose"},
+{1,  "Neck"},
+{2,  "RShoulder"},
+{3,  "RElbow"},
+{4,  "RWrist"},
+{5,  "LShoulder"},
+{6,  "LElbow"},
+{7,  "LWrist"},
+{8,  "RHip"},
+{9,  "RKnee"},
+{10, "RAnkle"},
+{11, "LHip"},
+{12, "LKnee"},
+{13, "LAnkle"},
+{14, "REye"},
+{15, "LEye"},
+{16, "REar"},
+{17, "LEar"},
+{18, "Background"}</string>
+                                <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00 sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uLG-Zc-UN2">
+                                <rect key="frame" x="16" y="197" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uNo-l9-LYZ" firstAttribute="height" secondItem="e8F-AM-Mhz" secondAttribute="height" id="3Ra-YP-Qc5"/>
+                            <constraint firstItem="Any-n1-QSw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5hV-2b-8oU"/>
+                            <constraint firstItem="uLG-Zc-UN2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HZe-LQ-8PJ"/>
+                            <constraint firstItem="Any-n1-QSw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NdF-YT-HvB"/>
+                            <constraint firstItem="e8F-AM-Mhz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="S7m-ju-189"/>
+                            <constraint firstItem="e8F-AM-Mhz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c14-t5-Mc1"/>
+                            <constraint firstItem="uNo-l9-LYZ" firstAttribute="centerX" secondItem="e8F-AM-Mhz" secondAttribute="centerX" id="mmR-2G-75E"/>
+                            <constraint firstItem="Any-n1-QSw" firstAttribute="leading" secondItem="e8F-AM-Mhz" secondAttribute="trailing" constant="8" id="oVj-aa-ahx"/>
+                            <constraint firstItem="uLG-Zc-UN2" firstAttribute="top" secondItem="e8F-AM-Mhz" secondAttribute="bottom" constant="7.5" id="p3z-WY-hle"/>
+                            <constraint firstItem="uNo-l9-LYZ" firstAttribute="width" secondItem="e8F-AM-Mhz" secondAttribute="width" id="uzw-ba-oMu"/>
+                            <constraint firstItem="uNo-l9-LYZ" firstAttribute="centerY" secondItem="e8F-AM-Mhz" secondAttribute="centerY" id="waw-E3-aqK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5zb-yp-msp">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="xp4-Sr-c1Z">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ube-uD-Hvh">
+                                <rect key="frame" x="233" y="7" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Update"/>
+                                <connections>
+                                    <action selector="update:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Yy-Ad-mVQ"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <size key="freeformSize" width="320" height="480"/>
+                    <connections>
+                        <outlet property="fpsLabel" destination="uLG-Zc-UN2" id="Xmc-Fe-LFE"/>
+                        <outlet property="heatMapImageView" destination="uNo-l9-LYZ" id="SpH-B8-hsf"/>
+                        <outlet property="imageView" destination="e8F-AM-Mhz" id="6dy-YC-gpX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="-228"/>
+        </scene>
+    </scenes>
+</document>
